@@ -22,7 +22,7 @@ search_word = ""
 identify_word = ""
 modify_word = ""
 
-# 프로세스 동작 설정 (단위 : amount_unit(원), time(분), rank(등))
+# 프로세스 동작 설정 (단위 : amount_unit(원), time(분), rank(등수))
 amount_unit = 0
 time = 0
 rank = 0

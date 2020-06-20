@@ -157,7 +157,7 @@ def get_amount_by_ad_id() :
 def change_amount(cmd) :
     if(cmd == "up") :
         if(setting.adtype == '쇼핑검색') :
-            logger.info("초기금액: " + str(get_amount_by_ad_id()) + "원")
+            print("초기금액: " + str(get_amount_by_ad_id()) + "원")
 
             uri = '/ncc/ads/' + get_ad_id()
             method = 'GET'
@@ -173,7 +173,7 @@ def change_amount(cmd) :
             print("변경된 금액: " + str(get_amount_by_ad_id()) + "원")
 
         elif(setting.adtype == '파워링크') :
-            logger.info("초기금액: " + str(get_amount_by_keyword_id()) + "원")
+            print("초기금액: " + str(get_amount_by_keyword_id()) + "원")
 
             uri = '/ncc/keywords/' + get_keyword_id()
             method = 'GET'
@@ -192,7 +192,7 @@ def change_amount(cmd) :
 
     if(cmd == "down") :
         if(setting.adtype == '쇼핑검색') :
-            logger.info("초기금액: " + str(get_amount_by_ad_id()) + "원")
+            print("초기금액: " + str(get_amount_by_ad_id()) + "원")
 
             uri = '/ncc/ads/' + get_ad_id()
             method = 'GET'
@@ -208,7 +208,7 @@ def change_amount(cmd) :
             print("변경된 금액: " + str(get_amount_by_ad_id()) + "원")
 
         elif(setting.adtype == '파워링크') :
-            logger.info("초기금액: " + str(get_amount_by_keyword_id()) + "원")
+            print("초기금액: " + str(get_amount_by_keyword_id()) + "원")
 
             uri = '/ncc/keywords/' + get_keyword_id()
             method = 'GET'
